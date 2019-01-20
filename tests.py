@@ -2,11 +2,7 @@ from http import HTTPStatus
 import unittest
 
 from app import create_app
-from config import Config
-
-
-class TestConfig(Config):
-    TESTING = True
+from config import TestConfig
 
 
 class TestApi(unittest.TestCase):
